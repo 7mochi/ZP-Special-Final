@@ -1,0 +1,31 @@
+{
+  "compiler": {
+    "dir": "./.compiler",
+    "version": "1.9.0-git5294",
+    "dev": true,
+    "addons": [],
+    "executable": "amxxpc"
+  },
+  "include": [
+    "./.compiler/include",
+    "./assets/addons/amxmodx/scripting/include"
+  ],
+  "input": {
+    "scripts": "./src/scripts",
+    "assets": [
+      {
+        "dir": "./assets",
+        "filter": "*.!(|dll)"
+      }
+    ]
+  },
+  "output": {
+    "plugins": "./dist/cstrike/addons/amxmodx/plugins",
+    "assets": "./dist/cstrike",
+    "scripts": "./dist/cstrike/addons/amxmodx/scripting",
+    "include": "./dist/cstrike/addons/amxmodx/scripting/include"
+  },
+  "rules": {
+    "flatCompilation": true
+  }
+}
